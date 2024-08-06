@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Difference Calculator</title>
+</head>
+<body>
+    <h1>Date Difference Calculator</h1>
+    <form action="api.php" method="POST">
+        <label for="start_date">Start Date:</label>
+        <input type="datetime-local" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="datetime-local" id="end_date" name="end_date" required><br><br>
+
+        <label for="calculation_type">Calculation Type:</label>
+        <select id="calculation_type" name="calculation_type">
+            <option value="days">Days</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="weeks">Complete Weeks</option>
+        </select><br><br>
+
+        <label for="conversion_unit">Conversion Unit:</label>
+        <select id="conversion_unit" name="conversion_unit">
+            <option value="days">Days</option>
+            <option value="seconds">Seconds</option>
+            <option value="minutes">Minutes</option>
+            <option value="hours">Hours</option>
+            <option value="years">Years</option>
+        </select><br><br>
+
+        <label for="timezone">Timezone:</label>
+        <input type="text" id="timezone" name="timezone" value="GMT"><br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
+
